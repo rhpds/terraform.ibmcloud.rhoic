@@ -5,7 +5,7 @@ variable "ibmcloud_region" {
 
 variable "ibmcloud_zone" {
   description = "Preferred zone in the preferred IBM Cloud region"
-  default = "3"
+  default = "2"
 }
 
 variable "resource_group" {
@@ -14,12 +14,27 @@ variable "resource_group" {
 }
 
 variable "vpc_name" {
-  default = "rhpds-vpc"
+  default = "rhpds"
   description = "Name of your VPC"
 }
 
+variable "subnet_name" {
+  default = "rhpds"
+  description = "Name of your Subnet"
+}
+
+variable "pg_name" {
+  default = "rhpds"
+  description = "Name of your Public Gateway"
+}
+
+variable "cos_name" {
+  default = "rhpds"
+  description = "Cloud Object Storage resource instance"
+}
+
 variable "cluster_name" {
-  default = "rhpds-cluster"
+  default = "rhpds"
   description = "Name of RHOIC Cluster"
 }
 
@@ -36,9 +51,4 @@ variable "cluster_flavor" {
 variable "cluster_worker_count" {
   default = "3"
   description = "Worker count per Zone for RHOIC Cluster"
-}
-
-variable "cos_instance_crn" {
-  default = ""
-  description = "Define the COS Instance CRN"
 }

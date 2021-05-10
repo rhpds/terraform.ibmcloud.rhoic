@@ -7,5 +7,5 @@ data "ibm_is_vpc" "rhpds" {
 }
 
 data "ibm_is_subnet" "rhpds" {
-    name = "${var.vpc_name}-sn"
+    name = "${var.vpc_name}"
 }
