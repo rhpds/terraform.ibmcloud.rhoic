@@ -34,3 +34,7 @@ resource "ibm_container_vpc_cluster" "rhpds" {
     name      = local.ZONE
   }
 }
+
+data "ibm_container_cluster_config" "cluster_config" {
+  cluster_name_id = ibm_container_vpc_cluster.rhpds.id
+}
