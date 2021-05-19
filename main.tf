@@ -7,8 +7,9 @@ data "ibm_is_vpc" "rhpds" {
 }
 
 data "ibm_is_subnet" "rhpds" {
-    name = "${var.vpc_name}"
+  name = var.subnet_name
 }
+
 locals {
   ZONE = "${var.ibmcloud_region}-${var.ibmcloud_zone}"
 }
