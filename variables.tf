@@ -9,32 +9,32 @@ variable "ibmcloud_zone" {
 }
 
 variable "resource_group" {
-  default = "Default"
+  default = "rhdp-rg"
   description = "Define the resource group for the workload"
 }
 
 variable "vpc_name" {
-  default = "rhpds"
+  default = "rhdp-vpc"
   description = "Name of your VPC"
 }
 
 variable "subnet_name" {
-  default = "rhpds"
+  default = "rhdp-subnet"
   description = "Name of your Subnet"
 }
 
-variable "pg_name" {
-  default = "rhpds"
+variable "pgw_name" {
+  default = "rhdp-pgw"
   description = "Name of your Public Gateway"
 }
 
 variable "cos_name" {
-  default = "rhpds"
+  default = "rhdp-cos"
   description = "Cloud Object Storage resource instance"
 }
 
 variable "cluster_name" {
-  default = "rhpds"
+  default = "rhdp-rhoic"
   description = "Name of RHOIC Cluster"
 }
 
