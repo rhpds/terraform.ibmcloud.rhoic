@@ -1,11 +1,11 @@
 variable "ibmcloud_region" {
   description = "Preferred IBM Cloud region to use for your infrastructure"
-  default = "us-east"
+  default = "us-south"
 }
 
 variable "ibmcloud_zone" {
   description = "Preferred zone in the preferred IBM Cloud region"
-  default = "2"
+  default = "1"
 }
 
 variable "resource_group" {
