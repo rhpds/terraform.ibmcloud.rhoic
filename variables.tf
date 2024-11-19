@@ -9,7 +9,7 @@ variable "ibmcloud_zone" {
 }
 
 variable "resource_group" {
-  default = "rhdp-rg"
+  default = "Default"
   description = "Define the resource group for the workload"
 }
 
